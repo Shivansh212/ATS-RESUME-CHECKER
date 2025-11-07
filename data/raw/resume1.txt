@@ -1,0 +1,18 @@
+Name: Rohan Sharma
+Email: rohan.sharma@example.com
+Phone: +91 9876543210
+
+Objective:
+Enthusiastic Software Engineer with 2 years of experience in backend development and API design.
+
+Skills:
+- Python, FastAPI, Flask, SQLAlchemy
+- MySQL, PostgreSQL
+- Docker, Git, REST APIs
+
+Experience:
+- Software Engineer at TechNova (2022–Present)
+  Worked on developing microservices for financial data processing using FastAPI.
+
+Education:
+B.Tech in Computer Science, Delhi University, 2021

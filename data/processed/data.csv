@@ -1,0 +1,77 @@
+id,text,type
+job1,"Position: Data Scientist
+
+Responsibilities:
+- Analyze business problems and build machine learning models.
+- Experience with Python, Pandas, Scikit-learn, and NLP tools.
+- Deploy ML models using Flask or FastAPI.
+- Experience with Tableau or Power BI is a plus.
+
+Requirements:
+- 2+ years of experience in Data Science or Machine Learning.
+- Strong understanding of NLP and feature engineering.",job_description
+job2,"Position: Backend Developer
+
+Responsibilities:
+- Design and build scalable REST APIs using FastAPI or Django.
+- Work with SQL and NoSQL databases.
+- Integrate third-party APIs and services.
+
+Requirements:
+- 1–3 years of backend experience.
+- Strong skills in Python, Flask/FastAPI, Docker, and Git.
+- Understanding of microservices and cloud deployment (AWS preferred).",job_description
+resume1,"Name: Rohan Sharma
+Email: rohan.sharma@example.com
+Phone: +91 9876543210
+
+Objective:
+Enthusiastic Software Engineer with 2 years of experience in backend development and API design.
+
+Skills:
+- Python, FastAPI, Flask, SQLAlchemy
+- MySQL, PostgreSQL
+- Docker, Git, REST APIs
+
+Experience:
+- Software Engineer at TechNova (2022–Present)
+  Worked on developing microservices for financial data processing using FastAPI.
+
+Education:
+B.Tech in Computer Science, Delhi University, 2021",resume
+resume2,"Name: Aditi Verma
+Email: aditi.verma@example.com
+Phone: +91 9988776655
+
+Objective:
+Passionate Data Scientist with expertise in NLP and predictive modeling.
+
+Skills:
+- Python, Pandas, NumPy, Scikit-learn
+- NLP, Text Classification, TF-IDF, Word2Vec
+- Tableau, Power BI
+
+Experience:
+- Data Analyst at DataNest (2021–2023)
+  Developed customer churn prediction models and automated reporting dashboards.
+
+Education:
+M.Sc. in Data Science, Mumbai University, 2021",resume
+resume3,"Name: Karan Mehta
+Email: karan.mehta@example.com
+Phone: +91 9090909090
+
+Objective:
+Machine Learning Engineer with strong experience in model deployment and MLOps.
+
+Skills:
+- Python, TensorFlow, PyTorch, Scikit-learn
+- AWS, Docker, CI/CD, FastAPI
+- Model deployment, API integration
+
+Experience:
+- ML Engineer at CloudAI (2020–Present)
+  Deployed scalable ML models for fraud detection and image classification.
+
+Education:
+B.Tech in Information Technology, VIT, 2020",resume

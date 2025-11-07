@@ -1,0 +1,18 @@
+Name: Karan Mehta
+Email: karan.mehta@example.com
+Phone: +91 9090909090
+
+Objective:
+Machine Learning Engineer with strong experience in model deployment and MLOps.
+
+Skills:
+- Python, TensorFlow, PyTorch, Scikit-learn
+- AWS, Docker, CI/CD, FastAPI
+- Model deployment, API integration
+
+Experience:
+- ML Engineer at CloudAI (2020–Present)
+  Deployed scalable ML models for fraud detection and image classification.
+
+Education:
+B.Tech in Information Technology, VIT, 2020

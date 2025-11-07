@@ -3,6 +3,8 @@ numpy
 seaborn
 scikit-learn
 pdfplumber
-docx
+python-docx
+spacy
+nltk
 
 -e .

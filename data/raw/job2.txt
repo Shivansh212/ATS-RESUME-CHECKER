@@ -1,0 +1,11 @@
+Position: Backend Developer
+
+Responsibilities:
+- Design and build scalable REST APIs using FastAPI or Django.
+- Work with SQL and NoSQL databases.
+- Integrate third-party APIs and services.
+
+Requirements:
+- 1–3 years of backend experience.
+- Strong skills in Python, Flask/FastAPI, Docker, and Git.
+- Understanding of microservices and cloud deployment (AWS preferred).

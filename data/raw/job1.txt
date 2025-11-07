@@ -1,0 +1,11 @@
+Position: Data Scientist
+
+Responsibilities:
+- Analyze business problems and build machine learning models.
+- Experience with Python, Pandas, Scikit-learn, and NLP tools.
+- Deploy ML models using Flask or FastAPI.
+- Experience with Tableau or Power BI is a plus.
+
+Requirements:
+- 2+ years of experience in Data Science or Machine Learning.
+- Strong understanding of NLP and feature engineering.
