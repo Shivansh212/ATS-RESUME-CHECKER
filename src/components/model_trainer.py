@@ -9,7 +9,7 @@ from src.utils import load_object
 
 @dataclass
 class ModelTrainerConfig:
-    
+    # We will save the final scores as a CSV in the artifacts folder
     scores_file_path: str = os.path.join('artifacts', 'ats_scores.csv')
 
 class ModelTrainer:
@@ -19,8 +19,8 @@ class ModelTrainer:
 
     def initiate_model_training(self, processed_data_path, preprocessor_obj_path):
         """
-        "Training" here means loading the vectorizer and calculating
-        the similarity scores between all resumes and jobs.
+        This function loads the data and the fitted preprocessor,
+        transforms the text, and calculates the similarity matrix.
         """
         try:
             logging.info("Model training (scoring) process started")
@@ -30,7 +30,7 @@ class ModelTrainer:
             vectorizer = load_object(file_path=preprocessor_obj_path)
             logging.info("Loaded processed data and preprocessor object")
 
-            # 2. Separate jobs and resumes
+            # 2. Separate jobs and resumes from the loaded DataFrame
             jobs_df = df[df['type'] == 'job_description'].reset_index(drop=True)
             resumes_df = df[df['type'] == 'resume'].reset_index(drop=True)
 
@@ -40,8 +40,8 @@ class ModelTrainer:
             # 3. Transform the text data using the *loaded* vectorizer
             
             logging.info("Transforming job and resume text into TF-IDF vectors...")
-            job_vectors = vectorizer.transform(jobs_df['text'])
-            resume_vectors = vectorizer.transform(resumes_df['text'])
+            job_vectors = vectorizer.transform(jobs_df['text'].astype(str))
+            resume_vectors = vectorizer.transform(resumes_df['text'].astype(str))
             
             
 
@@ -53,7 +53,6 @@ class ModelTrainer:
             
 
             # 5. Format the results into a readable DataFrame
-            
             resume_ids = resumes_df['id']
             job_ids = jobs_df['id']
 
@@ -64,7 +63,7 @@ class ModelTrainer:
 
             logging.info(f"Calculated Scores:\n{scores_df}")
 
-            # 6. Save the scores CSV
+            # 6. Save the scores CSV to the artifacts folder
             scores_df.to_csv(self.model_trainer_config.scores_file_path)
             logging.info(f"Scores saved to {self.model_trainer_config.scores_file_path}")
 
@@ -74,20 +73,3 @@ class ModelTrainer:
             logging.error("Error during model training/scoring")
             raise customException(e, sys)
 
-if __name__ == "__main__":
-    
-    from src.components.Data_ingestion import DataIngestion
-    from src.components.Data_transformation import DataTransformation
-
-    # Step 1: Ingestion
-    ingestion = DataIngestion()
-    processed_path = ingestion.initiate_data_ingestion()
-    
-    # Step 2: Transformation
-    transformer = DataTransformation()
-    preprocessor_path = transformer.initiate_data_transformation(processed_path)
-    
-    # Step 3: Training (Scoring)
-    trainer = ModelTrainer()
-    trainer.initiate_model_training(processed_path, preprocessor_path)
-    print(f"Scoring complete. Scores saved to {trainer.model_trainer_config.scores_file_path}")
