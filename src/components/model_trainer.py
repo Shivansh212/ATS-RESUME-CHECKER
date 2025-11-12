@@ -40,6 +40,7 @@ class ModelTrainer:
             # 3. Transform the text data using the *loaded* vectorizer
             
             logging.info("Transforming job and resume text into TF-IDF vectors...")
+            vectorizer.fit(jobs_df['text'].astype(str))
             job_vectors = vectorizer.transform(jobs_df['text'].astype(str))
             resume_vectors = vectorizer.transform(resumes_df['text'].astype(str))
             

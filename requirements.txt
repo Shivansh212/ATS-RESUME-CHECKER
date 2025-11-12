@@ -6,5 +6,7 @@ pdfplumber
 python-docx
 spacy
 nltk
+flask
+gunicorn
 
 -e .

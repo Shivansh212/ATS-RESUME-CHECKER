@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Resume Checker</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, rgb(1, 1, 70), rgb(0, 0, 40), rgb(10, 10, 100));
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+        }
+        .about p {
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: white;
+            font-size: 1.1rem;
+        }
+         .heading h1 {
+            margin-bottom: 3rem;
+            color: white;
+            font-size: 2.5rem;
+        }
+        .button{
+            margin: 2em;
+        }
+        .button a{
+            text-decoration: none;
+            border: 2px solid rgb(16, 226, 156);
+            padding: 12px 25px;
+            color: white;
+            background-color: rgb(16, 226, 156);
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .button a:hover{
+            background-color: transparent;
+            color: rgb(16, 226, 156);
+        }
+        @media (max-width: 600px) {
+            .heading h1 { font-size: 2rem; margin-bottom: 2rem; }
+            .about p { font-size: 1rem; }
+            .button a { padding: 10px 20px; font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 id="head">Welcome to the ATS Resume Checker!</h1>
+        </div>
+        <div class="about">
+            <p id="para">
+                This project uses a machine learning model to score your resume
+                against a job description. Upload both documents to see your
+                similarity match percentage, just like a real Applicant Tracking System.
+            </p>
+        </div>
+        <div class="button">
+            <a href="{{ url_for('home') }}">Get Started</a>
+        </div>
+    </div>
+</body>
+</html>
