@@ -1,4 +1,5 @@
 id,text,type
+job,Retrain Often: Add new resumes with these keywords to your data/raw_resumes folder and run python src/pipeline/train_pipeline.py again.,job_description
 job1,"Position: Data Scientist
 
 Responsibilities:
