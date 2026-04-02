@@ -80,7 +80,7 @@ class PredictionPipeline:
 
         except Exception as e:
             logging.error("Error during prediction")
-            raise customException(e, sys)
+            raise customException(e)
 
 if __name__ == "__main__":
     

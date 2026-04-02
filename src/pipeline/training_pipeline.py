@@ -41,7 +41,7 @@ class TrainingPipeline:
 
         except Exception as e:
             logging.error("Training pipeline failed.")
-            raise customException(e, sys)
+            raise customException(e)
 
 
 if __name__ == "__main__":

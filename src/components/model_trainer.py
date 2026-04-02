@@ -72,5 +72,5 @@ class ModelTrainer:
 
         except Exception as e:
             logging.error("Error during model training/scoring")
-            raise customException(e, sys)
+            raise customException(e)
 

@@ -119,5 +119,5 @@ class DataIngestion:
 
         except Exception as e:
             logging.error("Error during data ingestion")
-            raise customException(e, sys)
+            raise customException(e)
 

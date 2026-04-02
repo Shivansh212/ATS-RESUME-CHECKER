@@ -73,7 +73,7 @@ class DataTransformation:
             return tfidf_vectorizer
 
         except Exception as e:
-            raise customException(e, sys)
+            raise customException(e)
 
     def initiate_data_transformation(self, processed_data_path):
         """
@@ -103,5 +103,5 @@ class DataTransformation:
 
         except Exception as e:
             logging.error("Error during data transformation")
-            raise customException(e, sys)
+            raise customException(e)
 
